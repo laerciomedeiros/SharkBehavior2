@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "465296188034",
+    "firebase_url": "https://shark-behavior-2.firebaseio.com",
+    "project_id": "shark-behavior-2",
+    "storage_bucket": "shark-behavior-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465296188034:android:8d48d0828da9d0a7",
+        "android_client_info": {
+          "package_name": "com.example.sharkbehavior2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465296188034-kus7agno1pjtr0ees3ouv1mp6s05ier5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASenwmVBJsVJVXLvzhOqjH3ErMgNaiFyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

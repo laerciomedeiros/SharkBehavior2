@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:useDefaultMargins="true"
+    tools:context=".RealizaObservacaoActivity">
+
+
+    <TextView
+        android:id="@+id/textViewObservadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Quantos Observadores ?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/valorObservadoresTextView"
+            android:layout_gravity="center" />
+
+        <SeekBar
+            android:id="@+id/observadoresSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal|center"
+            android:max="50"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/teste"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/textViewLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Onde está o Tubarão ?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonBorda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borda"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meio do Tanque"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonPedras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedras" />
+    </RadioGroup>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/teste"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/textViewComportamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="O que o Tubarão está fazendo ?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupComportamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonNadando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Parado" />
+
+        <RadioButton
+            android:id="@+id/radioButtonParado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nadando" />
+
+    </RadioGroup>
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/teste"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Comentários:"
+      />
+
+
+    <EditText
+        android:id="@+id/editTextComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:hint="Anote alguma informação que você\nconsidere relevante desta observação"
+        android:inputType="textImeMultiLine"
+
+        />
+
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:onClick="cadastrarObservacaoClick"
+        android:text="Cadastrar Observação" />
+
+
+</LinearLayout>
