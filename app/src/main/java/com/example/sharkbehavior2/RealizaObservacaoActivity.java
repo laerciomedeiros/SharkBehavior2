@@ -126,7 +126,7 @@ public class RealizaObservacaoActivity extends AppCompatActivity {
                     user.put("comportamento", estado);
                     user.put("comentarios", comentarios);
 
-                    db.collection("observacoes")
+                    db.collection("estudo")
                             .add(user)
                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                 @Override
